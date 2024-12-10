@@ -86,7 +86,7 @@ const Item = ({ item, type = "full" }: ItemProps) => {
               {/* TODO: Update this with the v2 way of managing inventory */}
               {Array.from(
                 {
-                  length: Math.min(maxQuantity, 10),
+                  length: 0,
                 },
                 (_, i) => (
                   <option value={i + 1} key={i}>
