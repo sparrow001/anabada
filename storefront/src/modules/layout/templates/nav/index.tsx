@@ -30,6 +30,41 @@ export default async function Nav() {
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+            <LocalizedClientLink
+              className="hover:text-ui-fg-base flex gap-2"
+              href="/store"
+              data-testid="nav-cart-link"
+            >
+              All Products
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              className="hover:text-ui-fg-base flex gap-2"
+              href="/categories/toys"
+              data-testid="nav-cart-link"
+            >
+              Toys
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              className="hover:text-ui-fg-base flex gap-2"
+              href="/categories/clothes"
+              data-testid="nav-cart-link"
+            >
+              Clothes
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              className="hover:text-ui-fg-base flex gap-2"
+              href="/categories/utility"
+              data-testid="nav-cart-link"
+            >
+              Utilities
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              className="hover:text-ui-fg-base flex gap-2"
+              href="/categories/books"
+              data-testid="nav-cart-link"
+            >
+              Books
+            </LocalizedClientLink>
             <Suspense
               fallback={
                 <LocalizedClientLink
@@ -44,6 +79,7 @@ export default async function Nav() {
               <CartButton />
             </Suspense>
           </div>
+
         </nav>
       </header>
     </div>
